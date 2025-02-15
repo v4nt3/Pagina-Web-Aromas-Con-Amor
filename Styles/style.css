@@ -8,40 +8,64 @@ header {
     padding: 20px;
     text-align: center;
 }
-nav {
+.opciones {
     display: flex;
-    justify-content: space-evenly;
-    background-color: #333;
-    color: #fff;
     align-items: center;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 2px solid #ddd;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    background: #f0f0f0; /* Color de fondo */
+    padding: 10px 30px; /* Espaciado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    height: 80px; /* Alto del menú */
 }
-.product {
-    width: calc(33.33% - 20px); /* 33.33% - 20px de margen entre las columnas */
-    margin-bottom: 20px;
-}
-.product img {
-    max-width: 100%;
+
+.img-logo img, 
+.img-carrito img {
+    width: 70px; /* Tamaño ajustado de las imágenes */
     height: auto;
 }
+
+.op {
+    flex-grow: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centra las opciones */
+    gap: 40px; /* Espacio entre opciones */
+    font-family: 'Poppins', sans-serif;
+}
+
+.op a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.op a:hover {
+    color: #ff6600; /* Color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de agrandado */
+}
+
+.body{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 5% 10px;
+
+}
+.tex{
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+.body img{
+    width: 340px;
+    height: auto;
+}
+
+
+
+
 footer {
     background-color: #333;
     color: #fff;
@@ -50,10 +74,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-.img-logo {
-    width: 150px;
-    height: 90px;
-    border-radius: 50%;
-    display: flex;
 }
