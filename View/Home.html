@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,43 +8,161 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../Img/logo.png" alt="Logo" width="80" height="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active pe-5" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link" href="#">CATALOGO</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav ms-auto ">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <img src="../Img/carritoCompras.png" alt="CarritoCompras" width="50" height="50">
+                    </a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Carousel -->
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div id="carousel-item-start" class="carousel-item active">
+            <img src="../Img/banner-1.jpg" class="d-block w-100" alt="Banner-1">
+          </div>
+          <div id="carousel-item-start" class="carousel-item">
+            <img src="../Img/banner-2.jpg" class="d-block w-100" alt="Banner-2">
+          </div>
+          <div id="carousel-item-start" class="carousel-item">
+            <img src="../Img/banner-3.jpg" class="d-block w-100" alt="Banner-3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    <header>
-        <h1>CANDY CANDY</h1>
-    </header>
-    <div class="container-fluid opciones">
-        <div class="img-logo">
-            <img src="../Img/445620189_782649717285840_7134946007501289402_n.jpg" alt="">
+      <!-- Content -->
+      <div class="container mb-5 pt-5" style="height: 400px;">
+       <div class="row">
+        <div class="col-lg-6 text-center">
+            <img src="../Img/perfilCreador.png"  class="img-fluid"  alt="Creador"  width="300" height="300">
         </div>
-        <nav class="container op" >
-            <a href="">Inicio</a>
-            <a href="">Catalogo</a>
-            <a href="">Contacto</a>
-        </nav>
-        <div class="img-carrito">
-            <img src="../Img/carrito-de-compras.png" alt="">
+        <div class="col-lg-6 my-auto text-center">
+            <h2>Nuestro Concepto</h2>
+            <br>
+            <p class="custom-justify">Aromas con amor tiene como objetivo crear los diseños a base de las necesidades de nuestros clientes, es por eso que puedes contarnos que tipo de ocasión de vela buscas y nosotros te ayudamos.</p>
         </div>
-    </div>
-    <div class="container body">
-        <div>
-            <img src="../Img/usuario.png" alt="">
+
+       </div>
+      </div>
+
+      <!-- Carousel of Concept -->
+       
+      <div id="carouselExampleControls" class="carousel carousel-dark slide mt-5" data-bs-slide="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">RECORDATORIOS</h5>
+                  <p class="card-text">Aniversario, Baby Shower, Bodas, Bautizo.</p>
+                </div>
+              </div>
+              <div class="card text-center py-2">
+                <div class="card-body">
+                  <h5 class="card-title">VELAS CON PROPOSITO</h5>
+                  <p class="card-text">Son especiales para iluminar cada uno de tus deseos, con detalles, color y aroma de elección.</p>
+                </div>
+              </div>
+              <div class="card text-center py-2">
+                <div class="card-body">
+                  <h5 class="card-title">CUMPLEAÑOS</h5>
+                  <p class="card-text">Exclusividad<br>Detalles Unicos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card text-center py-2">
+                <div class="card-body">
+                  <h5 class="card-title">NAVIDEÑA</h5>
+                  <p class="card-text">Luz de fe y esperanza  periodo Decembrino.</p>
+                </div>
+              </div>
+              <div class="card text-center py-2">
+                <div class="card-body">
+                  <h5 class="card-title">DISEÑOS EN CONCRETO</h5>
+                  <p class="card-text">Vela en recipiente a base de concreto. <br> Bases talladas con un toque de color y brillo.</p>
+                </div>
+              </div>
+              <div class="card text-center py-2">
+                <div class="card-body">
+                  <h5 class="card-title">ANCHETA DECORATIVA</h5>
+                  <p class="card-text">Personalizada ideal para sorprender, en una ocasión especial.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div class="tex"> 
-            <p>Concepto
-                -------------------
-                ---------------------
-                ---------------------
-                ---------------------
-                ---------------------
-                --------------------
-            </p>
+
+        <button id="carousel-control-prev-concept" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="carousel-control-next-concept" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-5 py-5 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3>Redes</h3>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Whatsapp</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h3>Contacto</h3>
+              <p>Correo electrónico: info@example.com</p>
+              <p>Teléfono: 123-456-7890</p>
+            </div>
+            <div class="col-lg-4">
+              <h3>Derechos de autor</h3>
+              <p>(c) 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <footer>
-        <p>Contacto: info@candycandy.com | Teléfono: +123456789</p>
-        <p>Política de Privacidad | Devoluciones</p>
-    </footer>
-    
-    </body>
-    </html>
-    
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>      
+</body>
+</html>
